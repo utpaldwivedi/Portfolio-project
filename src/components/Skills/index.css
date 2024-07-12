@@ -62,3 +62,23 @@
 .techStackHeadAnimate{
     animation: flipInY 2s ease forwards;
 }
+
+
+@media only screen and (max-width:580px){
+    .ai-ml>.domainSkills{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width:400px){
+    .programmingLang>.domainSkills, .frontend>.domainSkills,.ai-ml>.domainSkills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width:300px){
+    .ai-ml>.domainSkills{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

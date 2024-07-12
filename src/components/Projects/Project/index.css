@@ -1,16 +1,17 @@
 .project{
     display: flex;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
+    margin: 100px 0;
 }
 .projectImage{
-    flex-basis: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .dipInRight{
-    width: 40vw;
+    width: 30vw;
+    margin-right: 90px;
     border-radius: 15px;
     box-shadow: 0 60px 123px -25px hsla(225, 4%, 81%, 0.42), 0 35px 75px -35px hsla(225, 2%, 62%, .08);
     transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
@@ -23,7 +24,8 @@
     opacity: 1;
 }
 .dipInLeft{
-    width: 40vw;
+    width: 30vw;
+    margin-left: 90px;
     border-radius: 15px;
     box-shadow: 0 60px 123px -25px hsla(225, 4%, 81%, 0.42), 0 35px 75px -35px hsla(225, 2%, 62%, .08);
     transform: perspective(800px) rotateY(-25deg) scale(.8) rotateX(10deg);
@@ -140,5 +142,41 @@
     }
     .projectLink{
         font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width:1000px){
+    .project{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 40px 0;
+    }
+    .projectImage{
+        width: 80vw;
+    }
+    .projectDetails{
+        margin: 50px 0;
+        width: 85vw;
+    }
+    .projectDesc{
+        width: 100%;
+    }
+    .dipInLeft,.dipInRight{
+        width: 350px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:732px){
+    .dipInLeft,.dipInRight{
+        width: 280px;
+    }
+}
+@media only screen and (max-width:350px){
+    .dipInLeft,.dipInRight{
+        width: 200px;
     }
 }
