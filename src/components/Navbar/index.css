@@ -104,3 +104,23 @@ a.active  .navItems {
         font-size: 14px;
     }
 }
+@media only screen and (max-width:460px){
+    .navItems{
+        height: fit-content;
+        padding: 10px;
+        font-size: 17px;
+    }
+    .dropItems{
+        height: fit-content;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media only screen and (max-width:410px){
+    .navItems{
+        height: fit-content;
+        padding: 3px;
+        font-size: 15px;
+        
+    }
+}
