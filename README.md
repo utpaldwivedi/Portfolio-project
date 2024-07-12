@@ -1,19 +1,19 @@
 # React + Vite App
-Live Link -  
+Live Link -  https://portfolio-utpal.vercel.app/
 
-For running the repo locally
+For running the repo locally\
 
-Download it locally-
+Download it locally- \
 git clone https://github.com/utpaldwivedi/Portfolio-project.git
 
-Move to project directory-
+Move to project directory-\
 cd .\Portfolio-project\
 
-Install dependencies-
+Install dependencies-\
 npm i
 
-Start the development server-
+Start the development server-\
 npm run dev
 
-Visit in browser-
+Visit in browser-\
 http://localhost:5173/
