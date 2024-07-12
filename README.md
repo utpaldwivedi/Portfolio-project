@@ -1,7 +1,7 @@
 # React + Vite App
 Live Link -  https://portfolio-utpal.vercel.app/
 
-For running the repo locally\
+For running the repo locally
 
 Download it locally- \
 git clone https://github.com/utpaldwivedi/Portfolio-project.git
