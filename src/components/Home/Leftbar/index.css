@@ -1,0 +1,108 @@
+.leftbar{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100px;
+    gap: 20px;
+    align-items: center;
+    padding-top: 160px;
+    background-color: #10ba46;
+}
+.instagramWrapper, .linkedinWrapper,.githubWrapper,.codeforcesWrapper,.leetcodeWrapper{
+    position: relative;
+}
+svg{
+    display: block;
+    transition: opacity 0.3s ease;
+}
+.instagramText{
+  position: absolute;
+  transform: translate(-33%, -130%);
+  font-size: 14px;
+  color:#FFD700;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.instagramWrapper:hover svg {
+  opacity: 0;
+}
+
+.instagramWrapper:hover .instagramText {
+  opacity: 1;
+}
+
+.linkedinText{
+  position: absolute;
+  transform: translate(-23%, -150%);
+  font-size: 16px;
+  color:#FFD700;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.linkedinWrapper:hover svg {
+  opacity: 0;
+}
+
+.linkedinWrapper:hover .linkedinText {
+  opacity: 1;
+}
+
+
+.githubText{
+  position: absolute;
+  transform: translate(-17%, -170%);
+  font-size: 16px;
+  color:#FFD700;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.githubWrapper:hover svg {
+  opacity: 0;
+}
+
+.githubWrapper:hover .githubText {
+  opacity: 1;
+}
+
+.codeforcesText{
+  position: absolute;
+  transform: translate(-34%, -140%);
+  font-size: 13px;
+  color:#FFD700;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.codeforcesWrapper:hover svg {
+  opacity: 0;
+}
+
+.codeforcesWrapper:hover .codeforcesText {
+  opacity: 1;
+}
+
+.leetcodeText{
+  position: absolute;
+  transform: translate(-34%, -140%);
+  font-size: 16px;
+  color:#FFD700;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.leetcodeWrapper:hover svg {
+  opacity: 0;
+}
+
+.leetcodeWrapper:hover .leetcodeText {
+  opacity: 1;
+}
+
+
+@media only screen and (max-width:800px){
+  .leftbar{
+      display: none;
+  }
+}

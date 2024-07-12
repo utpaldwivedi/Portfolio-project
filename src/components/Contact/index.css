@@ -1,0 +1,158 @@
+.contactPage{
+    height:730px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/contact.jpg);
+    color: #373274;
+
+}
+.Contact{
+    display: flex;
+    width: 80%;
+    height: 85%;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.ContactAnimate{
+    animation: zoomIn 1.5s ease forwards;
+}
+.leftPane{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.leftPaneBody{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.partner{
+    font-size:48px;
+    font-family:"Cyborg";
+    margin-bottom:0;
+}
+.partnerSupp{
+    font-size:25px;
+    font-family:"Exospace";
+    margin-top: 10px;
+}
+.nameWrapper,.emailWrapper,.messageWrapper{
+    font-family: Unicode;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.nameWrapper{
+    margin-top: 0px;
+}
+input{
+    background-color:#dddcef ;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width:100%;
+    font-family: monospace;
+}
+textarea{
+    background-color:#dddcef ;
+    border-radius: 10px;
+    border: none;
+    width:100%;
+    resize: none;
+}
+input:focus,textarea:focus{
+    outline-color: #4a4398;
+}
+input::placeholder,textarea::placeholder{
+    font-size: 20px;
+    font-family: Exospace;
+}
+.submitWrapper>input{
+    background-color:#4a4398 ;
+    color: white;
+    font-family: Unicode;
+    font-size:large;
+}
+input[type=text],input[type=email],textarea {
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  font-size: 18px;
+  background-size: 20px ;
+  background-position: 10px 5px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+#user_name{
+    background-image: url(../../assets/user.png);
+}
+#email_id{
+    background-image: url(../../assets/email.png);
+    background-position: 10px 7px;
+}
+
+#message{
+    background-image: url(../../assets/message.png);
+    background-position: 10px 16px;
+}
+
+.rightPane{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.contactInfoBody{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #dddcef;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-family: Unicode;
+}
+.contactInfoBody>div{
+    padding-left: 2.5vw;
+}
+.myEmail,.myLocation{
+    font-family: Exospace;
+    font-size: 2.5rem;
+}
+.myLocation{
+    line-height: 40px;
+}
+.myEmail>a{
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+.myLocation{
+    display: flex;
+}
+
+@media only screen and (max-width:1124px){
+    .contactPage{
+        height: fit-content;
+        padding: 5rem 0;
+    }
+    .Contact{
+        flex-direction: column;
+    }
+    .leftPane{
+        width: 100%;
+    }
+    .rightPane{
+        width: 100%;
+        height: 500px;
+    }
+}

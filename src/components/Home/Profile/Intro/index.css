@@ -1,0 +1,50 @@
+.introSec{
+    padding-top: 350px;
+    padding-left: 100px;
+    height: 100%;
+}
+
+.introSec>p{
+    font-size: 48px;
+    width: 55vw;
+    padding-left: 7vw;
+}
+
+
+.name>p{
+    background: rgba(20, 233, 88, .157);
+    border-radius: 12px;
+    color: #14e956;
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0;
+    margin-left: 7vw;
+    padding: .5rem 1rem;
+    text-transform: capitalize;
+    font-family: Exospace;
+    letter-spacing: 0.05rem;
+}
+.name{
+    width: fit-content;
+}
+
+@media only screen and (max-width:1360px){
+    .introSec{
+        width: fit-content;
+        padding: 100px;
+    }
+    .introSec>p{
+        font-size: 4rem;
+    }
+    .name>p{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width:800px){
+    .introSec{
+        width: 100vw;
+    }
+    .introSec>p{
+        width: 80vw;
+    }
+}

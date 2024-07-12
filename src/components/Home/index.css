@@ -1,0 +1,5 @@
+.Home{
+    display: flex;
+    min-height: 640px;
+    height: fit-content;
+}

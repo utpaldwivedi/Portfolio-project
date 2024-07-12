@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    color: #10ba45;
+    background-color: #1f2128;
+    margin: 0;
+}
+.footer>p{
+    font-size: 2.5rem;
+    padding: 0 25px;
+    text-align: center;
+}
+.heart{
+    animation: heartBeat 2.5s infinite;
+    display: inline-block;
+}

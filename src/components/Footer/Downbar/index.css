@@ -1,0 +1,108 @@
+.downbar{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #10ba46;
+    height: 80px;
+}
+.instagramWrapperDown, .linkedinWrapperDown,.githubWrapperDown,.codeforcesWrapperDown,.leetcodeWrapperDown{
+    position: relative;
+}
+svg,.instagramWrapperDown>img{
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.instagramTextDown{
+  position: absolute;
+  transform: translate(-33%, -130%);
+  font-size: 14px;
+  color:#FFD700;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.instagramWrapperDown:hover img {
+  opacity: 0;
+}
+
+.instagramWrapperDown:hover .instagramTextDown {
+  opacity: 1;
+}
+
+.linkedinTextDown{
+  position: absolute;
+  transform: translate(-23%, -150%);
+  font-size: 16px;
+  color:#FFD700;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.linkedinWrapperDown:hover svg {
+  opacity: 0;
+}
+
+.linkedinWrapperDown:hover .linkedinTextDown {
+  opacity: 1;
+}
+
+
+.githubTextDown{
+  position: absolute;
+  transform: translate(-17%, -170%);
+  font-size: 16px;
+  color:#FFD700;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.githubWrapperDown:hover svg {
+  opacity: 0;
+}
+
+.githubWrapperDown:hover .githubTextDown {
+  opacity: 1;
+}
+
+.codeforcesTextDown{
+  position: absolute;
+  transform: translate(-34%, -140%);
+  font-size: 13px;
+  color:#FFD700;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.codeforcesWrapperDown:hover svg {
+  opacity: 0;
+}
+
+.codeforcesWrapperDown:hover .codeforcesTextDown {
+  opacity: 1;
+}
+
+.leetcodeTextDown{
+  position: absolute;
+  transform: translate(-34%, -140%);
+  font-size: 16px;
+  color:#FFD700;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.leetcodeWrapperDown:hover svg {
+  opacity: 0;
+}
+
+.leetcodeWrapperDown:hover .leetcodeTextDown {
+  opacity: 1;
+}
+
+@media only screen and (min-width:800px){
+  .downbar{
+      display: none;
+  }
+}

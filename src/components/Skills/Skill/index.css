@@ -1,0 +1,49 @@
+.skill{
+    background-color: #021709;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.skillName{
+    font-family: Exospace;
+    font-size: 30px;
+    padding: 10px;
+    color:white;
+    border: none;
+
+}
+.skillLogo{
+    padding: 10px;
+    height: 70px;
+}
+
+@media only screen and (max-width:1380px){
+    .skillName{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:1200px){
+    .skillLogo{
+        padding: 5px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width:900px){
+    .skillLogo{
+        padding: 4px;
+        height: 40px;
+    }
+    .skill{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .skill{
+        display: grid;
+    }
+}

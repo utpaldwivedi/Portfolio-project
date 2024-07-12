@@ -1,0 +1,41 @@
+.profile{
+    display: flex;
+    width: 100%;
+    background-image: url(../../../assets/planet.png);
+    overflow: hidden;
+}
+
+.info{
+    width:55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boyPic{
+    display: flex;
+    align-items: center;
+}
+.boyPicAnimate{
+    animation: fadeInRight 1.5s ease forwards;
+}
+.victory{
+  animation: wobble 2s infinite;
+  display: inline-block;
+}
+
+@media only screen and (max-width:1420px){
+    .profile{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+    .boyPic{
+        padding-bottom: 30px;
+    }
+}
+@media only screen and (max-width:800px){
+    .profile{
+        width: 100vw;
+    }
+}

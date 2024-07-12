@@ -1,0 +1,88 @@
+.qualiLine{
+    display: flex;
+    align-items: center;
+    width: 100vw; 
+    
+}
+.leftQuali{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+}
+.rightQuali{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+    border-left: 3px dotted white;
+    width: 50vw;
+}
+.quali{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    color: #373274;
+    background-color: #a39cf5; 
+    border-radius: 15px;  
+    padding: 10px 25px;
+}
+.empty180{
+    height: 180px;
+}
+.org,.desig,.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.org{
+    font-size: 30px;
+    font-weight: bold;
+}
+.desig{
+    font-size: 16px;
+    text-align: center;
+}
+.time{
+    font-size: 15px;
+}
+.timeImg{
+    height: 15px;
+    margin: 0 5px;
+    padding-bottom: 1px;
+}
+.planePicWrapper{
+    height: 100%;
+    position: relative;
+}
+.planePic{
+    position: absolute;
+    height: 30px;
+    top: 0;
+    left: -12px;
+    z-index: 1;
+}
+.hidden{
+    opacity: 0;
+}
+@media only screen and (max-width:1220px){
+    .org{
+        font-size: 2.5rem;
+    }
+    .desig{
+        font-size: 1.5rem;
+    }
+    .time{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width:800px){
+    .quali{
+        padding: 10px;
+    }
+}
